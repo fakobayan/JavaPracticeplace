@@ -91,11 +91,11 @@ public class MainApp extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				//ランダムでリスタート時にセリフが変わる
 				int rndRestartIndexes = new java.util.Random().nextInt(10);
-				String[] messages = { "また可愛がってあげますわぁ！",
-						"アーニャ、ピーナッツ好き", "まだだ、まだおわらんよ！",
-						"モウイチド、ゲームシマス", "ウマ娘プリティーダービー！",
-						"次は負けませんわ！", "………(無言)",
-						"おまたせ、待った？", "次は勝ちますわぁ", "もう一度勝負…ってコト!?" };
+				String[] messages = { 
+						 "まだだ、まだおわらんよ！",
+						"モウイチド、ゲームシマス", 
+						"次は負けませんわ！", 
+						 "次は勝ちますわぁ", "もう一度勝負…ってコト!?" };
 
 				//セグメントを0でリセット。
 				myWinScoreOneDigits = 0;
@@ -324,11 +324,11 @@ public class MainApp extends JFrame {
 				if (myTotalScore > cpuTotalScore) {
 					int rndWinResultIndexes = new java.util.Random().nextInt(12);
 					//cpu敗北時セリフ
-					String[] winMessages = { "ま、負けたわけじゃないんだからね///!", "おめでとうございますわ",
-							"つ、次こそは！", "なん…だと…!?", "悔しいのでタバコの中身をじゃがりこにしておきましたわあ～",
-							"ノーカウント！ノーカウント！ノーカウント！ノーカン！ノーカン！ノーカン！", "悔しいですわ…",
+					String[] winMessages = { "おめでとうございますわ",
+							"つ、次こそは！"
+							 "悔しいですわ…",
 							"ガーーーン", "そんな…このわたくしが…!?", "わァ…あ……", "あなた、お強いですわね",
-							"素直に負けを認めますの", "超高性能次世代スーパーコンピュータのこのわたくしが敗北！？", "人間がこのわたくしを越える… " };
+							"素直に負けを認めますの", };
 
 					reasultScore.setText("勝負、" + myTotalScore + "：" + cpuTotalScore + "であなたの勝ち！");
 					cpuTalk.setText("CPU「" + winMessages[rndWinResultIndexes] + "」");
@@ -337,10 +337,10 @@ public class MainApp extends JFrame {
 					int rndLoseResultIndexes = new java.util.Random().nextInt(13);
 					//CPU勝利時セリフ
 					String[] loseMessages = { "人間がわたくしに勝てるとでも？", "わたくしの勝ちです！",
-							"いつから「勝った」と錯覚していた？", "おほほほほほほほ",
-							"WRYYYYYYY、無駄無駄無駄無駄無駄無駄無駄無駄ァ！", "おハーブですわぁ～wwwwwww", "CPUちゃんの勝利ですわあ～",
-							"惜しかったですわね、人間",
-							"やった！、やりましたわ！", "勝利をこの手にですわ", "敗北を知りたいですわあ～", "わたくしの計算に狂いはありませんの", "" };
+							 "おほほほほほほほ",
+							"WRYYYYYYY、無駄無駄無駄無駄無駄無駄無駄無駄ァ！", "CPUちゃんの勝利ですわあ～",
+						
+							"やった！、やりましたわ！", "勝利をこの手にですわ",   };
 					reasultScore.setText("勝負、" + myTotalScore + "：" + cpuTotalScore + "であなたの負け！");
 					cpuTalk.setText("CPU「" + loseMessages[rndLoseResultIndexes] + "」");
 
@@ -348,7 +348,7 @@ public class MainApp extends JFrame {
 					int rndDrawResultIndexes = new java.util.Random().nextInt(5);
 					//CPU引き分け時セリフ
 					String[] drawMessages = {
-							"このわたくしと互角ですわ!?", "とてもエレガントですわ", "わたくし相手に一歩も引かないなんてやりますわね", "いい勝負ね、気に入りましたわ",
+							"このわたくしと互角ですわ!?", "とてもエレガントですわ",  "いい勝負ね、気に入りましたわ",
 							"やりますわね、人間!!" };
 					reasultScore.setText("勝負、" + myTotalScore + "：" + cpuTotalScore + "で引き分け！");
 
