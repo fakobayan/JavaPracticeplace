@@ -338,9 +338,7 @@ public class MainApp extends JFrame {
 					//CPU勝利時セリフ
 					String[] loseMessages = { "人間がわたくしに勝てるとでも？", "わたくしの勝ちです！",
 							 "おほほほほほほほ",
-							"WRYYYYYYY、無駄無駄無駄無駄無駄無駄無駄無駄ァ！", "CPUちゃんの勝利ですわあ～",
-						
-							"やった！、やりましたわ！", "勝利をこの手にですわ",   };
+							 "CPUちゃんの勝利ですわあ～","やった！、やりましたわ！"};
 					reasultScore.setText("勝負、" + myTotalScore + "：" + cpuTotalScore + "であなたの負け！");
 					cpuTalk.setText("CPU「" + loseMessages[rndLoseResultIndexes] + "」");
 
